@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Google Search</title>
-        <link rel="stylesheet" href ="styles.css"
+        <title>Google</title>
+        <link rel="stylesheet" href ="styles.css">
+        <link rel="icon" type="image/x-icon" href="res/logo2.png">
+       
     </head>
     <body>
-        <div class ="title"><img class="googleimg" src="google.png"></div>
+        <div class ="header">
+            <div class="header_item">Google Image Search</div> 
+            <div class="header_item">Google Advanced Search</div>
+        </div>
+
+        <div class ="title"><img class="googleimg" src="res/google.png"></div>
+       
         <form  action="https://www.google.com/search">
             <div id = "search_bar"><input type="text" name="q"></div> 
             <div id = "search_bar">
-                <button class = "buttons">Google Search</button>
-                <button class = "buttons">I'm Feeling Lucky</button>
-                
+                <button class = "buttons" type="submit">Google Search</button>
+                <button class = "buttons" type="submit" name="btnI">I'm Feeling Lucky</button>   
             </div>
             <div id= "subtext" >
                 <div id="specialst">Google offered in: </div> <div id = "bluefont">  हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</div>

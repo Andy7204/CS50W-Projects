@@ -2,22 +2,24 @@
 .title {
    display: flex;
    justify-content: center;
-   margin-top: 4%;
+   margin-top: 2%;
    size: 50%;
 }
 .googleimg {
     width: 22%;
     height: auto;
+    min-width: 300px;
 }
-#search_bar, #subtext {
-    
+#search_bar {
     display: flex;
     justify-content: center;  
     gap: 12px; 
-    
 }
 #subtext {
     margin-top: 24px;
+    display: flex;
+    justify-content: center;  
+    gap: 12px; 
     font-size: 13.4px;
     font-family: sans-serif;
     word-spacing: 5px;
@@ -34,7 +36,7 @@
 .buttons {
     display:flex;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 8px;
     margin-top: 29px;
     padding-right: 16px;
     padding-left: 16px;
@@ -43,14 +45,20 @@
     font-size:14px;
     background-color: rgba(107, 107, 107, 0.055);
 }
+.buttons:hover {
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.15);
+    color: rgba(0,0,0,0.9);
+    cursor:pointer;
+}
 input[type=text]{
     border:0.5px solid rgb(0, 0, 0,0.1);
-    background-image: url("glass.png");
+    background-image: url("res/glass.png");
     background-position: 19px;
     background-size: 15px;
     background-repeat: no-repeat;
     border-radius:50px;
-    width: 43%;
+    width:95%;  
+    max-width: 585px;
     height: 48.5px;
     margin-top: 25px;
     margin-left: 0px;
@@ -58,10 +66,20 @@ input[type=text]{
     padding-left: 50px;
     font-size: 16px;
 }
+@media (min-width:787px) {
+    input[type=text]{
+        width:585px;
+    }
+}
+
 input[type=text]:hover{
     border:none;
-    box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.1)
+    box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.15)
 }
 input[type=text]:focus{
     outline: none;
+}
+.header {
+    display: flex;
+    justify-content: right;
 }
